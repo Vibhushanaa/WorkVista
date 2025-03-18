@@ -1,0 +1,190 @@
+<!--<div class="track-container">
+    <h2>My Job Applications</h2>
+   
+    <div *ngIf="loading">Loading applications...</div>
+    <div *ngIf="errorMessage">{{ errorMessage }}</div>
+   
+    <table *ngIf="applications.length > 0">
+      <tr>
+        <th>Job Title</th>
+        <th>Company</th>
+        <th>Status</th>
+        <th>Interview Date</th>
+        <th>Action</th>
+      </tr>
+      <tr *ngFor="let app of applications">
+        <td>{{ app.jobTitle }}</td>
+        <td>{{ app.companyName }}</td>
+        <td>{{ app.status }}</td>
+        <td>{{ app.interviewDate ? app.interviewDate : 'Pending' }}</td>
+        <td>
+          <button *ngIf="app.status === 'Applied'" (click)="withdrawApplication(app.applicationId)">
+            Withdraw
+          </button>
+        </td>
+      </tr>
+    </table>
+   
+    <p *ngIf="applications.length === 0 && !loading">No applications found.</p>
+  </div>
+  !-->
+
+ <!-- <div *ngIf="isLoading">Loading applications...</div>
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+<table *ngIf="applications.length > 0">
+  <tr>
+    <th>Application ID</th>
+    <th>Job Seeker ID</th>
+    <th>Job ID</th>
+    <th>Applied Date</th>
+    <th>Status</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let app of applications">
+    <td>{{ app.applicationId }}</td>
+    <td>{{ app.jobSeekerId }}</td>
+    <td>{{ app.jobId }}</td>
+    <td>{{ app.appliedDate }}</td>
+    <td>{{ app.status }}</td>
+    <td>
+      <button *ngIf="app.status === 'Applied'" (click)="withdrawApplication(app.applicationId)">
+        Withdraw
+      </button>
+    </td>
+  </tr>
+</table>
+
+<p *ngIf="applications.length === 0 && !isLoading">No applications found.</p>!-->
+
+
+<!--<div *ngIf="isLoading">Loading applications...</div>
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+<table *ngIf="applications.length > 0">
+  <tr>
+    <th>Application ID</th>
+    <th>Job Seeker ID</th>
+    <th>Job ID</th>
+    <th>Applied Date</th>
+    <th>Status</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th>Salary</th>
+    <th>Experience</th>
+    <th>Job Type</th>
+    <th>Job Category</th>
+    <th>Posted Date</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let app of applications">
+    <td>{{ app.applicationId }}</td>
+    <td>{{ app.jobSeekerId }}</td>
+    <td>{{ app.jobId }}</td>
+    <td>{{ app.appliedDate }}</td>
+    <td>{{ app.status }}</td>
+    <td>{{ app.jobPost.title }}</td>
+    <td>{{ app.jobPost.description }}</td>
+    <td>{{ app.jobPost.location }}</td>
+    <td>{{ app.jobPost.salary }}</td>
+    <td>{{ app.jobPost.experience }}</td>
+    <td>{{ app.jobPost.jobType }}</td>
+    <td>{{ app.jobPost.jobCategory }}</td>
+    <td>{{ app.jobPost.postedDate | date }}</td>
+    <td>
+      <button *ngIf="app.status === 'Applied'" (click)="withdrawApplication(app.applicationId)">
+        Withdraw
+      </button>
+    </td>
+  </tr>
+</table>
+
+<p *ngIf="applications.length === 0 && !isLoading">No applications found.</p>!-->
+
+<!--<div *ngIf="isLoading">Loading applications...</div>
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+<table *ngIf="applications.length > 0">
+  <tr>
+    <th>Application ID</th>
+    <th>Job Seeker ID</th>
+    <th>Job ID</th>
+    <th>Applied Date</th>
+    <th>Status</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Location</th>
+    <th>Salary</th>
+    <th>Experience</th>
+    <th>Job Type</th>
+    <th>Job Category</th>
+    <th>Posted Date</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let app of applications">
+    <td>{{ app.jobPost.applicationId }}</td>
+    <td>{{ app.jobSeekerId }}</td>
+    <td>{{ app.jobId }}</td>
+    <td>{{ app.appliedDate }}</td>
+    <td>{{ app.status }}</td>
+    <td>{{ app.jobPost.title }}</td>
+    <td>{{ app.jobPost.description }}</td>
+    <td>{{ app.jobPost.location }}</td>
+    <td>{{ app.jobPost.salary }}</td>
+    <td>{{ app.jobPost.experience }}</td>
+    <td>{{ app.jobPost.jobType }}</td>
+    <td>{{ app.jobPost.jobCategory }}</td>
+    <td>{{ app.jobPost.postedDate | date }}</td>
+    <td>
+      <button *ngIf="app.status === 'Applied'" (click)="withdrawApplication(app.jobPost.applicationId)">
+        Withdraw
+      </button>
+    </td>
+  </tr>
+</table>
+
+<p *ngIf="applications.length === 0 && !isLoading">No applications found.</p>!-->
+
+<div class="track-application-container">
+  <h1>Track Application Status</h1>
+  <div *ngIf="isLoading">Loading applications...</div>
+  <div *ngIf="errorMessage">{{ errorMessage }}</div>
+
+  <table *ngIf="applications.length > 0">
+    <tr>
+      <th>Application ID</th>
+      <th>Applied Date</th>
+      <th>Status</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Location</th>
+      <th>Salary</th>
+      <th>Experience</th>
+      <th>Job Type</th>
+      <th>Job Category</th>
+      <th>Posted Date</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let app of applications">
+      <td>{{ app.jobPost.applicationId }}</td>
+      <td>{{ app.appliedDate }}</td>
+      <td>{{ app.status }}</td>
+      <td>{{ app.jobPost.title }}</td>
+      <td>{{ app.jobPost.description }}</td>
+      <td>{{ app.jobPost.location }}</td>
+      <td>{{ app.jobPost.salary }}</td>
+      <td>{{ app.jobPost.experience }}</td>
+      <td>{{ app.jobPost.jobType }}</td>
+      <td>{{ app.jobPost.jobCategory }}</td>
+      <td>{{ app.jobPost.postedDate | date }}</td>
+      <td>
+        <button *ngIf="app.status === 'Applied'" (click)="withdrawApplication(app.jobPost.applicationId)">
+          Withdraw
+        </button>
+      </td>
+    </tr>
+  </table>
+
+  <p *ngIf="applications.length === 0 && !isLoading">No applications found.</p>
+</div>

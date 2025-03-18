@@ -1,0 +1,110 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left .logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 15px; /* Space between the logo and the title */
+}
+
+.header-left h1 {
+    margin: 0;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-bar a, .nav-bar button {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-bar a:hover {
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.nav-bar button {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.nav-bar button:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dashboard Content */
+.dashboard-content h2 {
+    font-family: 'Arial', sans-serif;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.dashboard-content p {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button.explore-btn {
+    background-color: #1ABC9C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+button.explore-btn:hover {
+    background-color: #16A085;
+}

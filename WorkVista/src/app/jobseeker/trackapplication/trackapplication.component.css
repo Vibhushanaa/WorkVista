@@ -1,0 +1,64 @@
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #1ABC9C;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 50px auto 20px auto; /* Center the heading and add margin */
+    max-width: 800px; /* Limit the width of the heading */
+}
+
+table {
+    width: 100%;
+    max-width: 800px; /* Limit the width of the table */
+    margin: 0 auto 20px auto; /* Center the table and add margin */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    word-wrap: break-word; /* Ensure long text wraps */
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+button {
+    background-color: #1ABC9C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover {
+    background-color: #16A085;
+}
+
+p {
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Center the paragraph */
+    max-width: 800px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the paragraph */
+}
+
+
+
+
+

@@ -1,0 +1,104 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f8f9fa; 
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+}
+.header { 
+    background-color: rgba(44, 62, 80, 0.8); 
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header h1 { 
+    color: #ffffff; 
+    margin: 0; 
+    font-size: 28px; 
+}
+.header img { 
+    margin-right: 10px; 
+    height: 40px; /* Adjust the height as needed */
+}
+.nav-bar { 
+    display: flex; 
+}
+.nav-bar a { 
+    color: #ECF0F1; 
+    text-decoration: none; 
+    padding: 12px 20px; 
+    margin: 0 10px; 
+    font-size: 16px; 
+    transition: 0.3s; 
+}
+.nav-bar a:hover { 
+    background-color: #1ABC9C; 
+    border-radius: 5px; 
+    color: #ffffff; 
+}
+.container { 
+    max-width: 800px; 
+    margin: 50px auto; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 30px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+h2 { 
+    color: #2C3E50; 
+    font-size: 26px; 
+    margin-bottom: 15px; 
+}
+p { 
+    color: #555; 
+    font-size: 16px; 
+    line-height: 1.6; 
+}
+.features { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around; 
+    margin-top: 30px; 
+}
+.feature-box { 
+    width: 45%; 
+    background: #f1f1f1; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin: 10px 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: left; /* Align text to the left */
+}
+.feature-box h3 { 
+    color: #2C3E50; 
+    font-size: 20px; 
+}
+.feature-box ul { 
+    padding-left: 20px; /* Add padding to the left for bullets */
+    list-style-type: disc; /* Use disc bullets */
+}
+.feature-box li { 
+    font-size: 14px; 
+    color: #444; 
+    margin-bottom: 10px; /* Add margin between list items */
+}
+.btn { 
+    display: inline-block; 
+    margin: 20px; 
+    padding: 12px 25px; 
+    text-decoration: none; 
+    color: #ffffff; 
+    background-color: #1ABC9C; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: 0.3s; 
+}
+.btn:hover { 
+    background-color: #16A085; 
+}

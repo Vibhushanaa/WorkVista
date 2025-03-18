@@ -1,0 +1,147 @@
+<!-- <div class="container">
+    <h2>Review Job Applications</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Application ID</th>
+                <th>Candidate Name</th>
+                <th>Email</th>
+                <th>Job Title</th>
+                <th>Resume</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let application of applications">
+                <td>{{ application.id }}</td>
+                <td>{{ application.candidateName }}</td>
+                <td>{{ application.email }}</td>
+                <td>{{ application.jobTitle }}</td>
+                <td>
+                    <a href="{{ application.resumeUrl }}" target="_blank">View Resume</a>
+                </td>
+                <td>
+                    <span [class.pending]="application.status === 'Pending'"
+                          [class.accepted]="application.status === 'Accepted'"
+                          [class.rejected]="application.status === 'Rejected'">
+                        {{ application.status }}
+                    </span>
+                </td>
+                <td>
+                    <button class="btn accept" (click)="updateStatus(application.id, 'Accepted')">Accept</button>
+                    <button class="btn reject" (click)="updateStatus(application.id, 'Rejected')">Reject</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> !-->
+
+<!-- <div class="application-container">
+    <h2>Job Applications</h2>
+    <div *ngFor="let application of applications">
+      <div class="application-card">
+        <p><strong>Application ID:</strong> {{ application.applicationId }}</p>
+        <p><strong>Job ID:</strong> {{ application.jobId }}</p>
+        <p><strong>Job Seeker ID:</strong> {{ application.jobSeekerId }}</p>
+        <p><strong>Status:</strong> {{ application.status }}</p>
+        <p><strong>Applied Date:</strong> {{ application.appliedDate | date }}</p>
+        <button (click)="shortlist(application.applicationId)">Shortlist</button>
+        <button (click)="reject(application.applicationId)">Reject</button>
+        <button (click)="finalize(application.applicationId)">Finalize</button>
+      </div>
+    </div>
+  </div>
+
+!-->
+
+<!--<div class="application-container">
+    <h2>Job Applications</h2>
+    <form [formGroup]="applicationForm" (ngSubmit)="getApplications()">
+      <label for="jobId">Job ID:</label>
+      <input type="number" id="jobId" formControlName="jobId" placeholder="Enter Job ID">
+      <button type="submit">Get Applications</button>
+    </form>
+    <div *ngIf="applications.length > 0">
+      <div *ngFor="let application of applications" class="application-card">
+        <p><strong>Application ID:</strong> {{ application.applicationId }}</p>
+        <p><strong>Job ID:</strong> {{ application.jobId }}</p>
+        <p><strong>Job Seeker ID:</strong> {{ application.jobSeekerId }}</p>
+        <p><strong>Status:</strong> {{ application.status }}</p>
+        <p><strong>Applied Date:</strong> {{ application.appliedDate | date }}</p>
+        <button (click)="shortlist(application.applicationId)">Shortlist</button>
+        <button (click)="reject(application.applicationId)">Reject</button>
+        <button (click)="finalize(application.applicationId)">Finalize</button>
+      </div>
+    </div>
+    <div *ngIf="applications.length === 0 && applicationForm.value.jobId">
+      <p>No applications found for Job ID: {{ applicationForm.value.jobId }}</p>
+    </div>
+  </div>!-->
+
+
+
+ <!-- <div class="application-container">
+    <h2>Job Applications</h2>
+    <form [formGroup]="applicationForm" (ngSubmit)="getApplications()">
+      <label for="jobId">Job ID:</label>
+      <input type="number" id="jobId" formControlName="jobId" placeholder="Enter Job ID">
+      <button type="submit">Get Applications</button>
+    </form>
+    <div *ngIf="applications.length > 0">
+      <div *ngFor="let application of applications" class="application-card">
+        <p><strong>Application ID:</strong> {{ application.applicationId }}</p>
+        <p><strong>Job ID:</strong> {{ application.jobId }}</p>
+        <p><strong>Job Seeker ID:</strong> {{ application.jobSeekerId }}</p>
+        <p><strong>Job Seeker Name:</strong> {{ application.jobSeeker.fullName }}</p>
+        <p><strong>Job Seeker Email:</strong> {{ application.jobSeeker.email }}</p>
+        <p><strong>Skills:</strong> {{ application.jobSeeker.skills }}</p>
+        <p><strong>Experience:</strong> {{ application.jobSeeker.experience }}</p>
+        <p><strong>Location:</strong> {{ application.jobSeeker.location }}</p>
+        <p><strong>Resume:</strong> <a [href]="application.jobSeeker.resume" target="_blank">View Resume</a></p>
+        <p><strong>Status:</strong> {{ application.status }}</p>
+        <p><strong>Applied Date:</strong> {{ application.appliedDate | date }}</p>
+        <button (click)="shortlist(application.applicationId)">Shortlist</button>
+        <button (click)="reject(application.applicationId)">Reject</button>
+        <button (click)="finalize(application.applicationId)">Finalize</button>
+      </div>
+    </div>
+    <div *ngIf="applications.length === 0 && applicationForm.value.jobId">
+      <p>No applications found for Job ID: {{ applicationForm.value.jobId }}</p>
+    </div>
+  </div>!-->
+
+
+  <div class="application-container">
+    <h2>Job Applications</h2>
+    <form [formGroup]="applicationForm" (ngSubmit)="getApplications()">
+      <label for="jobId">Job ID:</label>
+      <input type="number" id="jobId" formControlName="jobId" placeholder="Enter Job ID">
+      <button type="submit">Get Applications</button>
+    </form>
+  
+    <div *ngIf="loading">Loading applications...</div>
+    <div *ngIf="error">{{ error }}</div>
+  
+    <div *ngIf="applications.length > 0">
+      <div *ngFor="let application of applications" class="application-card">
+        <p><strong>Application ID:</strong> {{ application.applicationId }}</p>
+        <p><strong>Job ID:</strong> {{ application.jobId }}</p>
+        <p><strong>Job Seeker ID:</strong> {{ application.jobSeekerId }}</p>
+        <div *ngIf="application.jobSeeker">
+          <p><strong>Job Seeker Name:</strong> {{ application.jobSeeker.fullName }}</p>
+          <p><strong>Skills:</strong> {{ application.jobSeeker.skills }}</p>
+          <p><strong>Experience:</strong> {{ application.jobSeeker.experience }}</p>
+          <p><strong>Location:</strong> {{ application.jobSeeker.location }}</p>
+        </div>
+        <p><strong>Status:</strong> {{ application.status }}</p>
+        <p><strong>Applied Date:</strong> {{ application.appliedDate | date }}</p>
+        <button (click)="shortlist(application.applicationId)">Shortlist</button>
+        <button (click)="reject(application.applicationId)">Reject</button>
+        <button (click)="finalize(application.applicationId)">Finalize</button>
+      </div>
+    </div>
+    <div *ngIf="applications.length === 0 && applicationForm.value.jobId">
+      <p>No applications found for Job ID: {{ applicationForm.value.jobId }}</p>
+    </div>
+  </div>

@@ -1,0 +1,20 @@
+<div class="recruiter-register">
+    <h2>Register Recruiter</h2>
+    <form (ngSubmit)="registerRecruiter()">
+      <div>
+        <label for="companyName">Company Name:</label>
+        <input type="text" id="companyName" [(ngModel)]="recruiter.companyName" name="companyName" required>
+      </div>
+      <div>
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" [(ngModel)]="recruiter.contactNumber" name="contactNumber" required>
+      </div>
+      <div>
+        <label for="companyWebsite">Company Website:</label>
+        <input type="text" id="companyWebsite" [(ngModel)]="recruiter.companyWebsite" name="companyWebsite" required>
+      </div>
+      <button type="submit" [disabled]="isLoading">Register</button>
+    </form>
+    <p *ngIf="message">{{ message }}</p>
+    <div *ngIf="isLoading">Loading...</div>
+  </div>

@@ -1,0 +1,355 @@
+/*body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+ 
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+ 
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+ 
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+ 
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+ 
+textarea {
+    resize: vertical;
+}
+ 
+button {
+    background-color: #1ABC9C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+ 
+button:hover {
+    background-color: #16A085;
+}
+ 
+.header {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+ 
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+ 
+.nav-bar a:hover {
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    color: #ffffff;
+}*/
+
+/*body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #2C3E50;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+button.create {
+    background-color: #1ABC9C;
+}
+
+button.create:hover {
+    background-color: #16A085;
+}
+
+button.edit {
+    background-color: #f1c40f;
+}
+
+button.edit:hover {
+    background-color: #f39c12;
+}
+
+button.delete {
+    background-color: #e74c3c;
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+}
+
+button.filled {
+    background-color: #1ABC9C;
+}
+
+button.filled:hover {
+    background-color: #16A085;
+}
+
+.header {
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.nav-bar a:hover {
+    background-color: #1ABC9C;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+.status.open {
+    background-color: #1ABC9C;
+}
+
+.status.filled {
+    background-color: #E74C3C;
+}
+    */
+
+
+  /*  .job-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+      }
+      
+      .job-form label {
+        font-weight: bold;
+      }
+      
+      .job-form input,
+      .job-form textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .job-form button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      
+      .job-form button:hover {
+        background-color: #0056b3;
+      }
+
+*/
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  color: #2C3E50;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-align: center; /* Center the heading */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left; /* Align text to the left */
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+button {
+  background-color: #1ABC9C;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Center align button text */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button.create {
+  margin-bottom: 20px;
+}
+
+button.edit {
+  background-color: #3498DB;
+}
+
+button.delete {
+  background-color: #E74C3C;
+}
+
+button.edit:hover {
+  background-color: #2980B9;
+}
+
+button.delete:hover {
+  background-color: #C0392B;
+}
+
+.job-form {
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  font-family: 'Arial', sans-serif;
+}
+
+.job-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left; /* Align label text to the left */
+}
+
+.job-form input, .job-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left; /* Align input text to the left */
+  margin-bottom: 20px;
+}
+

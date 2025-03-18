@@ -1,0 +1,63 @@
+<!--<div class="container">
+    <h2>Schedule Interview</h2>
+    <form>
+      <div class="form-group">
+        <label for="applicationId">Application ID</label>
+        <input type="number" id="applicationId" class="form-control" placeholder="Enter Application ID" required>
+      </div>
+   
+      <div class="form-group">
+        <label for="interviewDate">Interview Date</label>
+        <input type="datetime-local" id="interviewDate" class="form-control" required>
+      </div>
+   
+      <div class="form-group">
+        <label for="interviewMode">Interview Mode</label>
+        <select id="interviewMode" class="form-control">
+          <option value="Online">Online</option>
+          <option value="Offline">Offline</option>
+        </select>
+      </div>
+   
+      <div class="form-group">
+        <label for="interviewLocation">Interview Location (if Offline)</label>
+        <input type="text" id="interviewLocation" class="form-control" placeholder="Enter Location">
+      </div>
+   
+      <div class="form-group">
+        <button type="submit" class="btn">Schedule Interview</button>
+      </div>
+    </form>
+  </div>
+  !-->
+
+  <div class="container">
+    <h2>Schedule Interview</h2>
+    <form [formGroup]="interviewForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="applicationId">Application ID</label>
+        <input type="number" id="applicationId" class="form-control" formControlName="applicationId" placeholder="Enter Application ID" required>
+      </div>
+      <div class="form-group">
+        <label for="interviewDate">Interview Date</label>
+        <input type="datetime-local" id="interviewDate" class="form-control" formControlName="interviewDate" required>
+      </div>
+      <div class="form-group">
+        <label for="interviewMode">Interview Mode</label>
+        <select id="interviewMode" class="form-control" formControlName="interviewMode">
+          <option value="Online">Online</option>
+          <option value="Offline">Offline</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="interviewLocation">Interview Location (if Offline)</label>
+        <input type="text" id="interviewLocation" class="form-control" formControlName="interviewLocation" placeholder="Enter Location">
+      </div>
+      <div class="form-group">
+        <input type="hidden" formControlName="status" value="Scheduled">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn">Schedule Interview</button>
+      </div>
+    </form>
+  </div>

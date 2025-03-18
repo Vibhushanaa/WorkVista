@@ -1,0 +1,196 @@
+/*body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+   
+  .container {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+   
+  h2 {
+    color: #2C3E50;
+  }
+   
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+   
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+   
+  th {
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+  }
+   
+  td span.pending {
+    color: #f39c12;
+    font-weight: bold;
+  }
+   
+  td span.accepted {
+    color: #27ae60;
+    font-weight: bold;
+  }
+   
+  td span.rejected {
+    color: #e74c3c;
+    font-weight: bold;
+  }
+   
+  .btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+   
+  .btn.accept {
+    background-color: #27ae60;
+    color: white;
+  }
+   
+  .btn.reject {
+    background-color: #e74c3c;
+    color: white;
+  }
+   
+  .btn:hover {
+    opacity: 0.8;
+  }*/
+
+  /*.application-container {
+    padding: 20px;
+  }
+  
+  .application-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .application-card p {
+    margin: 5px 0;
+  }
+  
+  button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }*/
+
+
+  .application-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    font-family: 'Arial', sans-serif;
+}
+
+.application-container h2 {
+    color: #2C3E50;
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center; /* Center the heading */
+}
+
+.application-container form {
+    margin-bottom: 20px;
+}
+
+.application-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left; /* Align label text to the left */
+}
+
+.application-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left; /* Align input text to the left */
+    margin-bottom: 20px;
+}
+
+.application-container button {
+    background-color: #1ABC9C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Center align button text */
+}
+
+.application-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.application-container .loading-message, .application-container .error-message, .application-container .no-applications-message {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+}
+
+.application-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application-card p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.application-card button {
+    background-color: #1ABC9C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    text-align: center; /* Center align button text */
+}
+
+.application-card button:hover {
+    background-color: #16A085;
+}

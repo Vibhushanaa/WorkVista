@@ -1,0 +1,47 @@
+.profile-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  font-family: 'Arial', sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left; /* Align label text to the left */
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left; /* Align input text to the left */
+}
+
+button {
+  background-color: #1ABC9C;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Center align button text */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

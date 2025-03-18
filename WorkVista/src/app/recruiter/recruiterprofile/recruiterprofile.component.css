@@ -1,0 +1,67 @@
+.recruiter-register {
+  max-width: 800px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left; /* Align text to the left */
+  font-family: 'Arial', sans-serif;
+}
+
+.recruiter-register h2 {
+  color: #2C3E50;
+  font-size: 26px;
+  margin-bottom: 15px;
+  text-align: center; /* Center the heading */
+}
+
+.recruiter-register form div {
+  margin-bottom: 20px;
+}
+
+.recruiter-register label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left; /* Align label text to the left */
+}
+
+.recruiter-register input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left; /* Align input text to the left */
+}
+
+.recruiter-register button {
+  background-color: #1ABC9C;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: 'Arial', sans-serif;
+  text-align: center; /* Center align button text */
+}
+
+.recruiter-register button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.recruiter-register p {
+  color: #555;
+  font-size: 16px;
+  text-align: center;
+}
+
+.recruiter-register .loading-message {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  margin: 20px 0;
+}

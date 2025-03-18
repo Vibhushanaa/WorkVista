@@ -1,0 +1,69 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #f8f9fa; 
+  margin: 0; 
+  padding: 0; 
+  color: #333; 
+}
+.header { 
+  background-color: #2C3E50; 
+  padding: 20px; 
+  text-align: center; 
+}
+.header h1 { 
+  font-family: Arial, sans-serif; 
+  color: #ffffff; 
+  margin: 0; 
+  font-size: 28px; 
+}
+.container { 
+  max-width: 400px; 
+  margin: 50px auto; 
+  background: #ffffff; 
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center; 
+}
+h2 { 
+  font-family: Arial, sans-serif; 
+  color: #2C3E50; 
+  font-size: 24px; 
+  margin-bottom: 15px; 
+}
+input[type="text"], input[type="email"], input[type="password"], select { 
+  width: 100%; 
+  padding: 10px; 
+  margin: 10px 0; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+button { 
+  width: 100%; 
+  padding: 12px; 
+  background-color: #1ABC9C; 
+  color: #ffffff; 
+  border: none; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer; 
+  transition: 0.3s; 
+}
+button:hover { 
+  background-color: #16A085; 
+}
+p { 
+  margin-top: 10px; 
+  font-size: 14px; 
+}
+a { 
+  color: #1ABC9C; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+a:hover { 
+  text-decoration: underline; 
+}
+.signup {
+  font-family: Arial, sans-serif;
+}
